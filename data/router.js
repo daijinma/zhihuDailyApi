@@ -56,6 +56,7 @@ module.exports = function(app){
 	  ajax({
 	    url:'http://news-at.zhihu.com/api/4/news/latest'
 	  },function(result){
+	  	console.log(result)
 	    res.write(result);
 	    res.end();
 	  });
